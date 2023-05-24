@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: MediaQuery.of(context).size.width * .8,
                     decoration: BoxDecoration(
                         borderRadius: const BorderRadius.only(
-                            bottomLeft: Radius.circular(100)),
+                            bottomLeft: Radius.circular(45)),
                         image: DecorationImage(
                             image: ImageComp.imageOne, fit: BoxFit.contain)),
                   ),
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(50),
                           color: ColorComp.colorWhite,
                         ),
-                        child:Column(
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Container(
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 borderRadius: BorderRadius.circular(100),
                                 color: ColorComp.colorGrey,
                               ),
-                              child:  Container(
+                              child: Container(
                                 height: 24,
                                 width: 24,
                                 decoration: BoxDecoration(
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 borderRadius: BorderRadius.circular(100),
                                 color: ColorComp.colorGreyTwo,
                               ),
-                              child:  Container(
+                              child: Container(
                                 height: 24,
                                 width: 24,
                                 decoration: BoxDecoration(
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 borderRadius: BorderRadius.circular(100),
                                 color: ColorComp.colorGreyTwo,
                               ),
-                              child:  Container(
+                              child: Container(
                                 height: 24,
                                 width: 24,
                                 decoration: BoxDecoration(
@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             )
                           ],
-                        ) ,
+                        ),
                       )
                     ],
                   ),
@@ -153,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 20,
                     ),
                     TextStyleComp.sum50,
-                    SizedBox(
+                    const SizedBox(
                       width: 150,
                     ),
                     GestureDetector(
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Container(
@@ -185,7 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: ColorComp.colorGreyTwo),
                       child: TextStyleComp.num01,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     GestureDetector(
@@ -250,26 +250,27 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(15),
                           color: ColorComp.colorGreyTwo,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.bookmark,
                           size: 24,
                         ),
                       ),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: ColorComp.colorBlack,
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: ColorComp.colorBlack,
+                      ),
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 60,
+                        width: 230,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 60,
-                          width: 230,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: TextStyleComp.addToCart,
-                        ))
+                        child: TextStyleComp.addToCart,
+                      ),
+                    ),
                   ],
                 )
               ],
